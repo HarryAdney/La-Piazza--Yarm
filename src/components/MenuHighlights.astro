@@ -1,0 +1,72 @@
+---
+const menuHighlights = [
+  {
+    title: "Seafood Linguine",
+    description: "Fresh linguine pasta with lobster, clams, and prawns in a rich tomato and white wine sauce",
+    price: "£24.95",
+    image: "https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    title: "Pan-Seared Duck Breast",
+    description: "Locally sourced duck breast with orange glaze, served with roasted vegetables and potato purée",
+    price: "£26.50",
+    image: "https://images.pexels.com/photos/361184/asparagus-steak-veal-steak-veal-361184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    title: "Truffle Risotto",
+    description: "Creamy arborio rice with wild mushrooms, truffle oil, and parmesan cheese",
+    price: "£19.95",
+    image: "https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    title: "Signature Cocktail: The Elixir",
+    description: "Our award-winning cocktail with gin, elderflower, fresh basil, lime, and cucumber",
+    price: "£12.50",
+    image: "https://images.pexels.com/photos/602750/pexels-photo-602750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  }
+];
+---
+
+<section class="py-20 bg-primary text-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16 animate-slide-up">
+      <h2 class="text-3xl md:text-4xl font-serif font-medium mb-6">
+        Menu Highlights
+      </h2>
+      <div class="w-20 h-1 bg-secondary mx-auto mb-8"></div>
+      <p class="max-w-2xl mx-auto text-gray-300">
+        Our seasonally inspired menu features the finest ingredients, expertly prepared to create memorable dining experiences.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {menuHighlights.map((item, index) => (
+        <div class="flex flex-col md:flex-row gap-6 items-center animate-slide-up" style={`animation-delay: ${0.1 * (index + 1)}s`}>
+          <div class="w-full md:w-1/3">
+            <img 
+              src={item.image} 
+              alt={item.title} 
+              class="w-full h-60 md:h-40 object-cover rounded"
+            />
+          </div>
+          <div class="w-full md:w-2/3">
+            <div class="flex justify-between items-baseline mb-2">
+              <h3 class="text-xl font-serif text-secondary">{item.title}</h3>
+              <span class="text-lg font-medium">{item.price}</span>
+            </div>
+            <p class="text-gray-300 text-sm">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <div class="text-center mt-12">
+      <a 
+        href="/menu" 
+        class="inline-block bg-secondary text-white px-6 py-3 rounded-sm hover:bg-secondary-dark transition-colors"
+      >
+        View Full Menu
+      </a>
+    </div>
+  </div>
+</section>

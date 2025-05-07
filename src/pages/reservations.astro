@@ -1,0 +1,314 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Book a Table | La Piazza, Yarm">
+  <Header />
+  
+  <!-- Reservations Hero Section -->
+  <section class="relative pt-24 pb-16 bg-primary text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Book a Table</h1>
+      <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+      <p class="max-w-2xl mx-auto text-gray-300">
+        Reserve your table for a memorable dining experience at La Piazza, Yarm.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Reservation Form Section -->
+  <section class="py-16 bg-light">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-lg animate-slide-up">
+          <h2 class="text-2xl font-serif font-medium mb-6 text-primary">Make a Reservation</h2>
+          
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-secondary"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-secondary"
+                  required
+                />
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-secondary"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label for="guests" class="block text-sm font-medium text-gray-700 mb-1">Number of Guests</label>
+                <select 
+                  id="guests" 
+                  name="guests" 
+                  class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-secondary"
+                  required
+                >
+                  <option value="">Select</option>
+                  <option value="1">1 Person</option>
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People</option>
+                  <option value="7">7 People</option>
+                  <option value="8">8 People</option>
+                  <option value="large">9+ People (Please specify in notes)</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+                <input 
+                  type="date" 
+                  id="date" 
+                  name="date" 
+                  class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-secondary"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label for="time" class="block text-sm font-medium text-gray-700 mb-1">Time</label>
+                <select 
+                  id="time" 
+                  name="time" 
+                  class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-secondary"
+                  required
+                >
+                  <option value="">Select</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                  <option value="21:30">9:30 PM</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="occasion" class="block text-sm font-medium text-gray-700 mb-1">Occasion (Optional)</label>
+                <select 
+                  id="occasion" 
+                  name="occasion" 
+                  class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-secondary"
+                >
+                  <option value="">Select</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="date">Date Night</option>
+                  <option value="business">Business Meal</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            
+            <div>
+              <label for="dietary" class="block text-sm font-medium text-gray-700 mb-1">Dietary Requirements (Optional)</label>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <label class="flex items-center">
+                  <input type="checkbox" name="dietary" value="vegetarian" class="mr-2 text-secondary focus:ring-secondary">
+                  Vegetarian
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" name="dietary" value="vegan" class="mr-2 text-secondary focus:ring-secondary">
+                  Vegan
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" name="dietary" value="gluten-free" class="mr-2 text-secondary focus:ring-secondary">
+                  Gluten-Free
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" name="dietary" value="dairy-free" class="mr-2 text-secondary focus:ring-secondary">
+                  Dairy-Free
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" name="dietary" value="nut-allergy" class="mr-2 text-secondary focus:ring-secondary">
+                  Nut Allergy
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" name="dietary" value="shellfish-allergy" class="mr-2 text-secondary focus:ring-secondary">
+                  Shellfish Allergy
+                </label>
+              </div>
+            </div>
+            
+            <div>
+              <label for="special-requests" class="block text-sm font-medium text-gray-700 mb-1">Special Requests</label>
+              <textarea 
+                id="special-requests" 
+                name="special-requests" 
+                rows="3" 
+                class="w-full p-3 border border-gray-300 rounded focus:ring-2 focus:ring-secondary focus:border-secondary"
+              ></textarea>
+            </div>
+            
+            <div class="pt-4">
+              <button 
+                type="submit" 
+                class="w-full bg-secondary hover:bg-secondary-dark text-white font-medium py-3 px-4 rounded transition-colors"
+              >
+                Book Now
+              </button>
+              <p class="text-sm text-gray-500 mt-3 text-center">
+                * We'll confirm your reservation via email or phone within 24 hours.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Reservation Policies -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-serif text-primary mb-8 text-center">Reservation Policies</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded shadow-lg animate-slide-up">
+            <h3 class="text-xl font-medium text-primary mb-4">Seating Times</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Weekday dinner reservations are allocated for 2 hours.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Weekend dinner reservations are allocated for 2.5 hours.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>For parties of 6 or more, please call us directly to arrange your reservation.</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-white p-6 rounded shadow-lg animate-slide-up" style="animation-delay: 0.1s;">
+            <h3 class="text-xl font-medium text-primary mb-4">Cancellations</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Please give at least 24 hours notice for cancellations or changes to your reservation.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Late cancellations or no-shows may incur a charge of £20 per person.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>We hold reservations for 15 minutes past the booking time before considering it a no-show.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Private Dining -->
+  <section class="py-16 bg-light">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <!-- Text Content -->
+          <div class="lg:w-1/2 animate-slide-up">
+            <h2 class="text-3xl font-serif text-primary mb-6">Private Dining</h2>
+            <div class="w-20 h-1 bg-secondary mb-8"></div>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              For special occasions or corporate events, our private dining room offers an exclusive space to enjoy the Elixir experience.
+            </p>
+            <ul class="space-y-3 text-gray-700 mb-8">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Capacity for up to 20 guests</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Customizable set menus</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Bespoke wine pairings</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-secondary mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Dedicated service staff</span>
+              </li>
+            </ul>
+            <a 
+              href="/contact" 
+              class="inline-block bg-primary text-white px-6 py-3 rounded-sm hover:bg-primary-dark transition-colors"
+            >
+              Inquire About Private Dining
+            </a>
+          </div>
+          
+          <!-- Image -->
+          <div class="lg:w-1/2 animate-slide-up" style="animation-delay: 0.2s;">
+            <img 
+              src="https://images.pexels.com/photos/5379707/pexels-photo-5379707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              alt="Private dining room" 
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
