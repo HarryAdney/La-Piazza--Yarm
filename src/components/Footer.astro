@@ -8,76 +8,73 @@ const address = {
 };
 ---
 
-<footer class="bg-primary text-white pt-16 pb-8">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<footer class="pt-16 pb-8 text-white bg-primary">
+  <div class="container px-4 mx-auto">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
       <!-- Contact Info -->
       <div>
-        <h3 class="text-xl font-serif mb-4 text-secondary">La Piazza, Yarm</h3>
-        <address class="not-italic mb-4 text-sm leading-relaxed">
+        <h3 class="mb-4 font-serif text-xl text-secondary">La Piazza, Yarm</h3>
+        <address class="mb-4 text-sm not-italic leading-relaxed">
           <p>76 High St.</p>
           <p>Yarm</p>
           <p>Stockton-on-Tees</p>
           <p>TS15 9AH</p>
         </address>
-        <p class="text-sm mb-2">
+        <p class="mb-2 text-sm">
           <span class="font-medium">Tel:</span>
           <a href="tel:+441642045870" class="hover:text-secondary">01642 045 870</a>
         </p>
         <p class="text-sm">
           <span class="font-medium">Email:</span>
-          <a href="mailto:info@elixirrichmond.co.uk" class="hover:text-secondary">info@elixirrichmond.co.uk</a>
+          <a href="mailto:enquiries@lapiazzayar.com" class="hover:text-secondary">enquiries@lapiazzayar.com</a>
         </p>
       </div>
 
       <!-- Opening Hours -->
       <div>
-        <h3 class="text-xl font-serif mb-4 text-secondary">Opening Hours</h3>
+        <h3 class="mb-4 font-serif text-xl text-secondary">Opening Hours</h3>
         <ul class="space-y-2 text-sm">
           <li class="flex justify-between">
-            <span>Monday - Thursday</span>
-            <span>5:00 PM - 11:00 PM</span>
+            <span>Monday - Saturday</span>
+            <span>12:00 PM - 10:00 PM</span>
           </li>
-          <li class="flex justify-between">
-            <span>Friday - Saturday</span>
-            <span>5:00 PM - 12:00 AM</span>
-          </li>
+
           <li class="flex justify-between">
             <span>Sunday</span>
-            <span>12:00 PM - 10:00 PM</span>
+            <span>12:00 PM - 9:00 PM</span>
           </li>
         </ul>
       </div>
 
       <!-- Quick Links -->
-      <div>
-        <h3 class="text-xl font-serif mb-4 text-secondary">Quick Links</h3>
+      <!-- <div>
+        <h3 class="mb-4 font-serif text-xl text-secondary">Quick Links</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/" class="hover:text-secondary transition-colors">Home</a></li>
-          <li><a href="/menu" class="hover:text-secondary transition-colors">Menu</a></li>
-          <li><a href="/about" class="hover:text-secondary transition-colors">About Us</a></li>
-          <li><a href="/contact" class="hover:text-secondary transition-colors">Contact</a></li>
-          <li><a href="/reservations" class="hover:text-secondary transition-colors">Book a Table</a></li>
-          <li><a href="/privacy-policy" class="hover:text-secondary transition-colors">Privacy Policy</a></li>
+          <li><a href="/" class="transition-colors hover:text-secondary">Home</a></li>
+          <li><a href="/menu" class="transition-colors hover:text-secondary">Menu</a></li>
+          <li><a href="/about" class="transition-colors hover:text-secondary">About Us</a></li>
+          <li><a href="/contact" class="transition-colors hover:text-secondary">Contact</a></li>
+          <li><a href="/reservations" class="transition-colors hover:text-secondary">Book a Table</a></li>
+          <li><a href="/privacy-policy" class="transition-colors hover:text-secondary">Privacy Policy</a></li>
         </ul>
-      </div>
+      </div> -->
 
       <!-- Newsletter -->
       <div>
-        <h3 class="text-xl font-serif mb-4 text-secondary">Newsletter</h3>
-        <p class="text-sm mb-4">Subscribe to our newsletter for special offers and updates.</p>
+        <h3 class="mb-4 font-serif text-xl text-secondary">Newsletter</h3>
+        <p class="mb-4 text-sm">Subscribe to our newsletter for special offers and updates.</p>
         <form class="space-y-3">
           <div>
             <input
               type="email"
               placeholder="Your Email Address"
-              class="w-full p-2 bg-primary-light text-white rounded focus:outline-none focus:ring-2 focus:ring-secondary text-sm"
+              class="w-full p-2 text-sm text-white rounded bg-primary-light focus:outline-none focus:ring-2 focus:ring-secondary"
               required
             />
           </div>
           <button
             type="submit"
-            class="bg-secondary hover:bg-secondary-dark text-white px-4 py-2 rounded text-sm transition-colors"
+            class="px-4 py-2 text-sm text-white transition-colors rounded bg-secondary hover:bg-secondary-dark"
           >
             Subscribe
           </button>
@@ -86,9 +83,9 @@ const address = {
     </div>
 
     <!-- Social and Copyright -->
-    <div class="mt-12 pt-8 border-t border-primary-light">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="flex space-x-6 mb-4 md:mb-0">
+    <div class="pt-8 mt-12 border-t border-primary-light">
+      <div class="flex flex-col items-center justify-between md:flex-row">
+        <div class="flex mb-4 space-x-6 md:mb-0">
           <a href="https://facebook.com" aria-label="Facebook" class="text-white hover:text-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
