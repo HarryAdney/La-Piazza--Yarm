@@ -1,23 +1,16 @@
 ---
 const currentYear = new Date().getFullYear();
-const address = {
-  street: "76 High St.",
-  city: "Yarm",
-  county: "Stockton-on-Tees",
-  postcode: "TS15 9AH"
-};
 ---
 
 <footer class="pt-16 pb-8 text-white bg-primary">
   <div class="container px-4 mx-auto">
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
       <!-- Contact Info -->
-      <div>
+      <div class="flex flex-col">
         <h3 class="mb-4 font-serif text-xl text-secondary">La Piazza, Yarm</h3>
         <address class="mb-4 text-sm not-italic leading-relaxed">
           <p>76 High St.</p>
           <p>Yarm</p>
-          <p>Stockton-on-Tees</p>
           <p>TS15 9AH</p>
         </address>
         <p class="mb-2 text-sm">
@@ -26,41 +19,12 @@ const address = {
         </p>
         <p class="text-sm">
           <span class="font-medium">Email:</span>
-          <a href="mailto:enquiries@lapiazzayar.com" class="hover:text-secondary">enquiries@lapiazzayar.com</a>
+          <a href="mailto:enquiries@lapiazzayarm.com" class="hover:text-secondary">enquiries@lapiazzayar.com</a>
         </p>
       </div>
 
-      <!-- Opening Hours -->
-      <div>
-        <h3 class="mb-4 font-serif text-xl text-secondary">Opening Hours</h3>
-        <ul class="space-y-2 text-sm">
-          <li class="flex justify-between">
-            <span>Monday - Saturday</span>
-            <span>12:00 PM - 10:00 PM</span>
-          </li>
-
-          <li class="flex justify-between">
-            <span>Sunday</span>
-            <span>12:00 PM - 9:00 PM</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Quick Links -->
-      <!-- <div>
-        <h3 class="mb-4 font-serif text-xl text-secondary">Quick Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="/" class="transition-colors hover:text-secondary">Home</a></li>
-          <li><a href="/menu" class="transition-colors hover:text-secondary">Menu</a></li>
-          <li><a href="/about" class="transition-colors hover:text-secondary">About Us</a></li>
-          <li><a href="/contact" class="transition-colors hover:text-secondary">Contact</a></li>
-          <li><a href="/reservations" class="transition-colors hover:text-secondary">Book a Table</a></li>
-          <li><a href="/privacy-policy" class="transition-colors hover:text-secondary">Privacy Policy</a></li>
-        </ul>
-      </div> -->
-
       <!-- Newsletter -->
-      <div>
+      <div class="flex flex-col">
         <h3 class="mb-4 font-serif text-xl text-secondary">Newsletter</h3>
         <p class="mb-4 text-sm">Subscribe to our newsletter for special offers and updates.</p>
         <form class="space-y-3">
@@ -80,18 +44,34 @@ const address = {
           </button>
         </form>
       </div>
+      
+      <!-- Opening Hours -->
+      <div class="flex flex-col">
+        <h3 class="mb-4 font-serif text-xl text-secondary">Opening Hours</h3>
+        <ul class="space-y-2 text-sm">
+          <li class="grid grid-cols-2">
+            <span class="text-gray-300">Monday - Saturday</span>
+            <span class="text-right">12:00 PM - 10:00 PM</span>
+          </li>
+
+          <li class="grid grid-cols-2">
+            <span class="text-gray-300">Sunday</span>
+            <span class="text-right">12:00 PM - 9:00 PM</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Social and Copyright -->
     <div class="pt-8 mt-12 border-t border-primary-light">
       <div class="flex flex-col items-center justify-between md:flex-row">
         <div class="flex mb-4 space-x-6 md:mb-0">
-          <a href="https://facebook.com" aria-label="Facebook" class="text-white hover:text-secondary">
+          <a href="https://www.facebook.com/profile.php?id=61575719523081" aria-label="Facebook" class="text-white hover:text-secondary" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
             </svg>
           </a>
-          <a href="https://instagram.com" aria-label="Instagram" class="text-white hover:text-secondary">
+          <a href="https://www.instagram.com/lapiazzayarm/" aria-label="Instagram" class="text-white hover:text-secondary" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -105,7 +85,7 @@ const address = {
           </a>
         </div>
         <p class="text-sm text-gray-400">
-          &copy; {currentYear} La Piazza, Yarm. All rights reserved.
+          &copy; {currentYear} La Piazza, Yarm Ltd. All rights reserved.
         </p>
       </div>
     </div>
