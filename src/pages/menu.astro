@@ -1,213 +1,247 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 // Menu Categories and Items
 const starters = [
   {
     name: "Seared Scallops",
     description: "With pea purée, crispy pancetta and mint oil",
-    price: "£14.95"
+    price: "£14.95",
   },
   {
     name: "Burrata",
-    description: "Served with heritage tomatoes, basil oil and toasted sourdough",
-    price: "£12.50"
+    description:
+      "Served with heritage tomatoes, basil oil and toasted sourdough",
+    price: "£12.50",
   },
   {
     name: "Duck Liver Parfait",
     description: "With toasted brioche, red onion marmalade and cornichons",
-    price: "£11.95"
+    price: "£11.95",
   },
   {
     name: "Wild Mushroom Soup",
     description: "With truffle oil and artisan bread (V)",
-    price: "£9.50"
-  }
+    price: "£9.50",
+  },
 ];
 
 const mains = [
   {
     name: "Fillet of Beef",
-    description: "8oz 28-day aged fillet, served with triple-cooked chips, roasted tomato and a choice of peppercorn or béarnaise sauce",
-    price: "£32.95"
+    description:
+      "8oz 28-day aged fillet, served with triple-cooked chips, roasted tomato and a choice of peppercorn or béarnaise sauce",
+    price: "£32.95",
   },
   {
     name: "Pan-Roasted Sea Bass",
     description: "With saffron potatoes, samphire, clams and white wine sauce",
-    price: "£24.50"
+    price: "£24.50",
   },
   {
     name: "Rack of Lamb",
-    description: "With dauphinoise potatoes, seasonal vegetables and rosemary jus",
-    price: "£28.95"
+    description:
+      "With dauphinoise potatoes, seasonal vegetables and rosemary jus",
+    price: "£28.95",
   },
   {
     name: "Wild Mushroom Risotto",
     description: "With truffle oil, parmesan and rocket (V)",
-    price: "£19.95"
-  }
+    price: "£19.95",
+  },
 ];
 
 const desserts = [
   {
     name: "Dark Chocolate Fondant",
     description: "With salted caramel ice cream and honeycomb",
-    price: "£9.95"
+    price: "£9.95",
   },
   {
     name: "Crème Brûlée",
     description: "Classic vanilla crème brûlée with shortbread",
-    price: "£8.50"
+    price: "£8.50",
   },
   {
     name: "Sticky Toffee Pudding",
     description: "With butterscotch sauce and vanilla ice cream",
-    price: "£8.95"
+    price: "£8.95",
   },
   {
     name: "Cheese Selection",
-    description: "Selection of British cheeses with grapes, celery, chutney and crackers",
-    price: "£12.95"
-  }
+    description:
+      "Selection of British cheeses with grapes, celery, chutney and crackers",
+    price: "£12.95",
+  },
 ];
 
 const cocktails = [
   {
     name: "The La Piazza",
-    description: "Our signature cocktail with gin, elderflower, fresh basil, lime and cucumber",
-    price: "£12.50"
+    description:
+      "Our signature cocktail with gin, elderflower, fresh basil, lime and cucumber",
+    price: "£12.50",
   },
   {
     name: "Smoky Old Fashioned",
-    description: "Woodford Reserve, brown sugar, Angostura bitters and orange peel with a hickory smoke infusion",
-    price: "£14.95"
+    description:
+      "Woodford Reserve, brown sugar, Angostura bitters and orange peel with a hickory smoke infusion",
+    price: "£14.95",
   },
   {
     name: "Passion Fruit Martini",
     description: "Vanilla vodka, passion fruit, lime juice and prosecco",
-    price: "£11.95"
+    price: "£11.95",
   },
   {
     name: "Yarm Royale",
     description: "Chambord, crème de mûre, fresh blackberries and champagne",
-    price: "£13.50"
-  }
+    price: "£13.50",
+  },
 ];
 ---
 
 <Layout title="Menu | La Piazza, Yarm">
   <Header />
-  
+
   <!-- Menu Hero Section -->
-  <section class="relative pt-24 pb-16 bg-primary text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Menu</h1>
-      <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+  <section class="relative pt-24 pb-16 text-white bg-primary">
+    <div class="container px-4 mx-auto text-center">
+      <h1 class="mb-4 font-serif text-4xl font-bold md:text-5xl">Our Menu</h1>
+      <div class="w-20 h-1 mx-auto mb-6 bg-secondary"></div>
       <p class="max-w-2xl mx-auto text-gray-300">
-        Crafted with passion and the finest ingredients, our menu offers a blend of classic and contemporary dishes.
+        Crafted with passion and the finest ingredients, our menu offers a blend
+        of classic and contemporary dishes.
       </p>
     </div>
   </section>
-  
+
   <!-- Menu Content -->
   <section class="py-16 bg-light">
-    <div class="container mx-auto px-4">
+    <div class="container px-4 mx-auto">
       <!-- Starters Section -->
       <div class="mb-16 animate-slide-up">
-        <h2 class="text-3xl font-serif text-primary mb-8 text-center">Starters</h2>
+        <h2 class="mb-8 font-serif text-3xl text-center text-primary">
+          Starters
+        </h2>
         <div class="max-w-4xl mx-auto">
-          {starters.map(item => (
-            <div class="mb-8 border-b border-gray-200 pb-6 last:border-0">
-              <div class="flex justify-between items-baseline mb-2">
-                <h3 class="text-xl font-medium text-primary">{item.name}</h3>
-                <span class="text-lg font-medium text-secondary">{item.price}</span>
+          {
+            starters.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
               </div>
-              <p class="text-gray-600">{item.description}</p>
-            </div>
-          ))}
+            ))
+          }
         </div>
       </div>
-      
+
       <!-- Main Courses Section -->
       <div class="mb-16 animate-slide-up" style="animation-delay: 0.1s;">
-        <h2 class="text-3xl font-serif text-primary mb-8 text-center">Main Courses</h2>
+        <h2 class="mb-8 font-serif text-3xl text-center text-primary">
+          Main Courses
+        </h2>
         <div class="max-w-4xl mx-auto">
-          {mains.map(item => (
-            <div class="mb-8 border-b border-gray-200 pb-6 last:border-0">
-              <div class="flex justify-between items-baseline mb-2">
-                <h3 class="text-xl font-medium text-primary">{item.name}</h3>
-                <span class="text-lg font-medium text-secondary">{item.price}</span>
+          {
+            mains.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
               </div>
-              <p class="text-gray-600">{item.description}</p>
-            </div>
-          ))}
+            ))
+          }
         </div>
       </div>
-      
+
       <!-- Desserts Section -->
       <div class="mb-16 animate-slide-up" style="animation-delay: 0.2s;">
-        <h2 class="text-3xl font-serif text-primary mb-8 text-center">Desserts</h2>
+        <h2 class="mb-8 font-serif text-3xl text-center text-primary">
+          Desserts
+        </h2>
         <div class="max-w-4xl mx-auto">
-          {desserts.map(item => (
-            <div class="mb-8 border-b border-gray-200 pb-6 last:border-0">
-              <div class="flex justify-between items-baseline mb-2">
-                <h3 class="text-xl font-medium text-primary">{item.name}</h3>
-                <span class="text-lg font-medium text-secondary">{item.price}</span>
+          {
+            desserts.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
               </div>
-              <p class="text-gray-600">{item.description}</p>
-            </div>
-          ))}
+            ))
+          }
         </div>
       </div>
-      
+
       <!-- Cocktails Section -->
       <div class="animate-slide-up" style="animation-delay: 0.3s;">
-        <h2 class="text-3xl font-serif text-primary mb-8 text-center">Signature Cocktails</h2>
+        <h2 class="mb-8 font-serif text-3xl text-center text-primary">
+          Signature Cocktails
+        </h2>
         <div class="max-w-4xl mx-auto">
-          {cocktails.map(item => (
-            <div class="mb-8 border-b border-gray-200 pb-6 last:border-0">
-              <div class="flex justify-between items-baseline mb-2">
-                <h3 class="text-xl font-medium text-primary">{item.name}</h3>
-                <span class="text-lg font-medium text-secondary">{item.price}</span>
+          {
+            cocktails.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
               </div>
-              <p class="text-gray-600">{item.description}</p>
-            </div>
-          ))}
+            ))
+          }
         </div>
       </div>
-      
+
       <!-- Menu Notes -->
       <div class="max-w-4xl mx-auto mt-16 text-center">
-        <p class="text-gray-600 mb-4">
-          <span class="font-medium">Please note:</span> Our menu changes seasonally to ensure we use the freshest ingredients.
+        <p class="mb-4 text-gray-600">
+          <span class="font-medium">Please note:</span> Our menu changes seasonally
+          to ensure we use the freshest ingredients.
         </p>
         <p class="text-gray-600">
           (V) - Vegetarian | (VG) - Vegan | (GF) - Gluten Free
         </p>
-        <p class="text-gray-600 mt-4">
-          If you have any allergies or dietary requirements, please inform your server.
+        <p class="mt-4 text-gray-600">
+          If you have any allergies or dietary requirements, please inform your
+          server.
         </p>
       </div>
     </div>
   </section>
-  
+
   <!-- Call to Action -->
-  <section class="py-16 bg-primary text-white text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-serif mb-6">Ready to experience our cuisine?</h2>
+  <section class="py-16 text-center text-white bg-primary">
+    <div class="container px-4 mx-auto">
+      <h2 class="mb-6 font-serif text-3xl">Ready to experience our cuisine?</h2>
       <p class="max-w-2xl mx-auto mb-8 text-gray-300">
-        Join us for lunch or dinner and enjoy our carefully crafted menu in elegant surroundings.
+        Join us for lunch or dinner and enjoy our carefully crafted menu in
+        elegant surroundings.
       </p>
-      <a 
-        href="/reservations" 
-        class="inline-block bg-secondary text-white px-8 py-3 rounded-sm hover:bg-secondary-dark transition-colors"
+      <a
+        href="/reservations"
+        class="inline-block px-8 py-3 text-white transition-colors rounded-sm bg-secondary hover:bg-secondary-dark"
       >
         Book a Table
       </a>
     </div>
   </section>
-  
+
   <Footer />
 </Layout>
