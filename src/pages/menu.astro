@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 // Menu Categories and Items
-const starters = [
+const hot_starters = [
   {
     name: "POTATO SKINS (V)",
     description:
@@ -122,6 +122,60 @@ const starters = [
   },
 ];
 
+const cold_starters = [
+  {
+    name: "PANE E OLIVE (V)",
+    description: "Fresh bread with marinated mixed olives.",
+    price: "£4.95",
+  },
+  {
+    name: "BRUSCHETTA (V)",
+    description:
+      "Toasted Italian bread topped with diced tomato and onions with olive oil, garlic, basil and shaved parmesan cheese.",
+    price: "£5.50",
+  },
+  {
+    name: "CAPRESE (V)",
+    description:
+      "Tomato and baby mozzarella drizzled with olive oil pesto, finished with black pepper and basil.",
+    price: "£6.95",
+  },
+  {
+    name: "PRAWN SALAD",
+    description: "Prawns with iceberg lettuce drizzled with Marie rose sauce.",
+    price: "£6.50",
+  },
+  {
+    name: "PATE DELLA CASA",
+    description:
+      "Chef's homemade pate, served with Cumberland sauce and warm toast.",
+    price: "£5.95",
+  },
+  {
+    name: "PARMA HAM AND MELON",
+    description: "Thinly sliced air cured ham served with chilled melon.",
+    price: "£6.95",
+  },
+  {
+    name: "CESAR SALAD",
+    description:
+      "Fresh grilled strips of chicken breast on a bed of lettuce, topped with smoked bacon, anchovies, parmesan shavings and chef's own dressing.",
+    price: "£6.50",
+  },
+  {
+    name: "ANTIPASTO MISTO",
+    description:
+      "Selection of Italian air cured salami's and meats with parmesan cheese shavings.",
+    price: "£7.95",
+  },
+  {
+    name: "ANTIPASTO VOCENTE",
+    description:
+      "A sharing board for two. A platter serving a mixture of Italian cured meats, served with bruschetta, mixed olives and a variety of Italian cheeses.",
+    price: "£17.95",
+  },
+];
+
 const mains = [
   {
     name: "Fillet of Beef",
@@ -214,15 +268,38 @@ const cocktails = [
 
   <!-- Menu Content -->
   <section class="py-16 bg-light">
+    <!-- TODO put a navbar to each of the menu types here -->
+    <!-- Hot starters, cold starters, Mains, Pasta, Pizza, risotto, chicken, meat, seafood, sides, Desserts, Cocktails -->
     <div class="container px-4 mx-auto">
-      <!-- Starters Section -->
+      <!-- Hot Starters Section -->
       <div class="mb-16 animate-slide-up">
         <h2 class="mb-8 font-serif text-3xl text-center text-primary">
-          Starters
+          Starters (Hot)
         </h2>
         <div class="max-w-4xl mx-auto">
           {
-            starters.map((item) => (
+            hot_starters.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <!-- Cold Starters Section -->
+      <div class="mb-16 animate-slide-up">
+        <h2 class="mb-8 font-serif text-3xl text-center text-primary">
+          Starters (Cold)
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          {
+            cold_starters.map((item) => (
               <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
                 <div class="flex items-baseline justify-between mb-2">
                   <h3 class="text-xl font-medium text-primary">{item.name}</h3>
