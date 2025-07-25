@@ -1,0 +1,47 @@
+[
+  {
+    "name": "HOUSE FRIES",
+    "description": "",
+    "price": "£3.50"
+  },
+  {
+    "name": "ONION RINGS",
+    "description": "",
+    "price": "£3.50"
+  },
+  {
+    "name": "SEASONAL MIXED SALAD",
+    "description": "",
+    "price": "£3.50"
+  },
+  {
+    "name": "CREAMED SPINACH",
+    "description": "",
+    "price": "£3.50"
+  },
+  {
+    "name": "MIXED VEGETABLES",
+    "description": "",
+    "price": "£3.50"
+  },
+  {
+    "name": "CREAMY MASHED POTATO",
+    "description": "",
+    "price": "£3.50"
+  },
+  {
+    "name": "GARLIC BREAD",
+    "description": "",
+    "price": "£4.80"
+  },
+  {
+    "name": "TOMATO GARLIC BREAD",
+    "description": "",
+    "price": "£5.00"
+  },
+  {
+    "name": "CHEESE GARLIC BREAD",
+    "description": "",
+    "price": "£5.00"
+  }
+]

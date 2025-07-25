@@ -1,0 +1,27 @@
+[
+  {
+    "name": "FILLET OF SEABASS",
+    "description": "Pan fried seabass fillets served with king prawns, baby prawns and fresh mussels, all topped with a light white wine, lemon and garlic sauce.",
+    "price": "£21.95"
+  },
+  {
+    "name": "FILLET OF SALMON",
+    "description": "Scottish salmon fillets served with king prawns, baby prawns and fresh mussels cooked with a creamy English mustard sauce.",
+    "price": "£21.95"
+  },
+  {
+    "name": "SALMON LAKSA CURRY",
+    "description": "A Scottish salmon fillet served with baby and king prawns in a rich curry sauce served with mixed vegetables",
+    "price": "£21.95"
+  },
+  {
+    "name": "MIXED SEAFOOD PLATTER",
+    "description": "Fillet of seabass, fillet of salmon, half lobster, king prawns, mussels in white wine and garlic sauce.",
+    "price": "£34.95"
+  },
+  {
+    "name": "MEDITERRANEAN SEABASS",
+    "description": "Seabass fillet, infused with olives, garlic and sweet red onions. Enhanced by sundried tomatoes, aubergine, fresh Thai chilli and cherry tomatoes. This dish is simmered in a Napoli sauce.",
+    "price": "£20.50"
+  }
+]

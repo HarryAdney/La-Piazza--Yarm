@@ -1,0 +1,42 @@
+[
+  {
+    "name": "CHOCOLATE FUDGE BROWNIE",
+    "description": "(G, M, E) With chocolate sauce and deluxe ice cream",
+    "price": "£5.90"
+  },
+  {
+    "name": "TIRAMISU",
+    "description": "(G, M) Finger biscuits soaked in coffee and amaretto liqueur, covered in layers of cream, topped with cocoa powder",
+    "price": "£5.90"
+  },
+  {
+    "name": "PANNA COTTA",
+    "description": "(M) The famous vanila flavoured cooked cream dessert from Piemonte with either amaretto or cassis syrup topping",
+    "price": "£5.90"
+  },
+  {
+    "name": "BANOFFEE PIE",
+    "description": "(G, M) Caramel toffee with fresh banana topped with fresh cream and crumbled Cadbury's flake on a biscuit base",
+    "price": "£5.90"
+  },
+  {
+    "name": "SEMIFREDDO",
+    "description": "(M, E) A zesty lemon and limoncello parfait with citrus and berry sauses",
+    "price": "£5.90"
+  },
+  {
+    "name": "STICKY TOFFEE PUDDING*",
+    "description": "(G, E) With warm caramel sauce topped with deluxe vanilla ice cream",
+    "price": "£5.90"
+  },
+  {
+    "name": "WHITE CHOCOLATE & BAILEYS CHEESECAKE",
+    "description": "(G, M, E) With chocolate sauce and deluxe ice cream",
+    "price": "£5.90"
+  },
+  {
+    "name": "ICE CREAM",
+    "description": "(M, E) Choose from",
+    "price": "£5.90"
+  }
+]

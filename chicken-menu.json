@@ -1,0 +1,67 @@
+[
+  {
+    "name": "POLLO PICANTE",
+    "description": "Grilled chicken breast with parma ham taleggio cheese and spicy sausage in a rich tomato sauce.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO KIEV",
+    "description": "Garlic and herbs stuffed chicken in breadcrumbs served with garlic butter.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO PANCETTA**",
+    "description": "Breast of chicken cooked in white wine, English mustard, garlic, cream and leek sauce served with mashed potatoes, topped with crispy bacon.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO PARMESAN**",
+    "description": "Flattened chicken escalope deep fried in breadcrumbs then topped with bechamel sauce and melted cheddar cheese, served with salad, homemade chips and garlic dip.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO DIANE OR AU POIVRE",
+    "description": "Grilled chicken breast served with your choice of sauce.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO CACCIATORE",
+    "description": "Chicken breast cooked with peppers, onions, capers and mixed olives in a rich red wine and tomato sauce.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO BOSCAIOLA",
+    "description": "Chicken breast cooked with wild mushrooms and blue cheese sauce.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO ASPARAGUS",
+    "description": "Breast of chicken stuffed with cheese, asparagus and sun dried tomatoes, wrapped in streaky bacon and served in a cream, white wine and garlic sauce.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO TOSCANO**",
+    "description": "Grilled chicken breast with spinach and mozzarella served with white wine and cream garlic sauce on a bed of tagliatelle.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO CARAVAGGIO**",
+    "description": "Pan fried breast of chicken with tiger prawns, Norwegian prawns with garlic, tomato and brandy in a lobster sauce served with timbale of rice.",
+    "price": "£17.95"
+  },
+  {
+    "name": "CHICKEN GRILL",
+    "description": "Chicken breast grilled served with vegetables or house fries and a choice of spaciada sauce or blue cheese sauce.",
+    "price": "£16.95"
+  },
+  {
+    "name": "POLLO PEPERONETA",
+    "description": "A breast of chicken cooked in white wine, garlic, mixed peppers, garden peas and leeks. Served in a creamy tomato sauce.",
+    "price": "£16.95"
+  },
+  {
+    "name": "HOT SHOT PARMESAN**",
+    "description": "Flattened chicken escalope, deep fried in crispy breadcrumbs. Topped with a rich béchamel sauce, green jalapeños and spicy pepperoni. Then finished with a layer of melted cheddar cheese. Served with a house salad, chips and garlic dip",
+    "price": "£17.50"
+  }
+]

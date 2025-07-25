@@ -1,0 +1,62 @@
+[
+  {
+    "name": "SIRLOIN STEAK",
+    "description": "",
+    "price": "£27.95"
+  },
+  {
+    "name": "T-BONE STEAK",
+    "description": "",
+    "price": "£28.95"
+  },
+  {
+    "name": "FILLET STEAK",
+    "description": "",
+    "price": "£27.95"
+  },
+  {
+    "name": "RIBEYE A LA PIAZZA",
+    "description": "Ribeye steak, king prawns and baby prawns cooked in a homemade lobster sauce.",
+    "price": "£25.95"
+  },
+  {
+    "name": "SALTIMBOCCA RIBEYE",
+    "description": "Ribeye steak served with baby prawns, mixed peppers cooked in a creamy garlic sauce.",
+    "price": "£23.95"
+  },
+  {
+    "name": "FILLET SURF & TURF",
+    "description": "Fillet steak served with king prawns in a white wine and garlic sauce.",
+    "price": "£30.95"
+  },
+  {
+    "name": "FILLET LA PIAZZA",
+    "description": "Medallion fillet tower, goats cheese and black pudding finished with rosemary demi-glaze.",
+    "price": "£29.95"
+  },
+  {
+    "name": "STEAK SAUCES",
+    "description": "Peppercorn, Diane, A la Creme, Demi Glaze",
+    "price": "£1.95"
+  },
+  {
+    "name": "LAMB SHANK**",
+    "description": "Cooked in a juicy demi-glaze with rosemary and served with vegetables and mash.",
+    "price": "£20.50"
+  },
+  {
+    "name": "LAMB CHOPS**",
+    "description": "Grilled lamb chops, served with creamy mashed potatoes and medley of seasonal mixed vegetables. Choose between a refreshing mint sauce or rich gravy.",
+    "price": "£20.50"
+  },
+  {
+    "name": "MIXED SIZZLER",
+    "description": "Stripped beef, chicken, bacon, baby prawns tiger prawns and mixed peppers cooked with a choice of sweet chilli or BBQ sauce.",
+    "price": "£26.95"
+  },
+  {
+    "name": "STROGANOFF**",
+    "description": "Diced lean beef cooked in a demi glaze, onions, mushrooms, cream and mustard sauce, served with timbale of rice",
+    "price": "£26.95"
+  }
+]

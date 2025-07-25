@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Bellini",
+    "description": "Prosecco and Archers Peach Schnapps",
+    "price": "£8.95"
+  },
+  {
+    "name": "Aperol Spritz",
+    "description": "Sparkling Prosecco 20cl, Aperol 25ml topped with soda, ice and a slice of orange",
+    "price": "£8.95"
+  },
+  {
+    "name": "Cham Cham",
+    "description": "Black Raspberry Liqueur topped with Prosecco",
+    "price": "£8.95"
+  },
+  {
+    "name": "Kir Royale",
+    "description": "Blackcurrant Liqueur topped with Prosecco",
+    "price": "£8.95"
+  },
+  {
+    "name": "Pornstar Martini",
+    "description": "Vanilla vodka, Passionfruit Liqueur, Passionfruit Puree, Vanilla Syrup, Lime Juice and Pineapple Juice",
+    "price": "£8.95"
+  },
+  {
+    "name": "Sex on the Beach",
+    "description": "Vodka, Peach Schnapps, Peach Puree, Grenadine and Orange Juice",
+    "price": "£8.95"
+  },
+  {
+    "name": "Pina Colada",
+    "description": "Coconut Rum, Dark Rum, Coconut Milk, Cream and Pineapple Juice",
+    "price": "£8.95"
+  },
+  {
+    "name": "Mojito (choose from Strawberry or Raspberry)",
+    "description": "White Rum, Lime Juice, Gomme Syrup, Mint Leaves and Soda",
+    "price": "£8.95"
+  },
+  {
+    "name": "Daquiri (choose from Strawberry or Raspberry)",
+    "description": "White Rum, Gomme Syrup, Lime Juice",
+    "price": "£8.95"
+  },
+  {
+    "name": "Espresso Martini",
+    "description": "Vanilla Vodka, Coffee Liqueur, Vanilla Syrup and Espresso",
+    "price": "£8.95"
+  }
+]

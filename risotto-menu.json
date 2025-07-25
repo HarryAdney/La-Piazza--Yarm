@@ -1,0 +1,42 @@
+[
+  {
+    "name": "RISOTTO VERDE",
+    "description": "Arborio rice with green beans, peas, green peppers, spinach and courgettes in its own stock with parmesan cheese and a hint of chilli and garlic.",
+    "price": "£10.95"
+  },
+  {
+    "name": "RISOTTO ALFREDO",
+    "description": "Arborio rice with mushrooms and chicken in a light creamy sauce.",
+    "price": "£10.95"
+  },
+  {
+    "name": "RISOTTO SAFFRON",
+    "description": "Arborio rice with garlic, onions, chicken and mixed peppers cooked in a creamy saffron sauce.",
+    "price": "£11.95"
+  },
+  {
+    "name": "RISOTTO AL SALMON GAMBERI",
+    "description": "Arborio rice with fresh salmon, tiger prawns and baby prawns in a white wine, garlic cream sauce with a touch of tomato and cherry tomatoes.",
+    "price": "£12.50"
+  },
+  {
+    "name": "RISOTTO CALAMARI E GAMBERI",
+    "description": "Arborio rice with calamari, tiger prawns and baby prawns in a light tomato, garlic and white wine sauce with cream and a hint of chilli and cherry tomatoes.",
+    "price": "£12.95"
+  },
+  {
+    "name": "RISOTTO AI FRUTTI DI MARE",
+    "description": "Arborio rice with cherry tomatoes tiger prawns, mussels and mixed seafood in a white wine, garlic and a hint of chilli tomato sauce.",
+    "price": "£12.95"
+  },
+  {
+    "name": "SPICY RISOTTO",
+    "description": "Arborio rice with thin strips of beef and chicken cooked with onions, peppers and mushrooms in a red wine spicy tomato sauce and cherry tomatoes.",
+    "price": "£12.95"
+  },
+  {
+    "name": "WILD MUSHROOM RISOTTO",
+    "description": "Arborio rice with wild mushrooms with onions in a creamy garlic sauce.",
+    "price": "£11.95"
+  }
+]

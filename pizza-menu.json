@@ -1,0 +1,112 @@
+[
+  {
+    "name": "MARGHERITA (V)",
+    "description": "",
+    "price": "£11.95"
+  },
+  {
+    "name": "PEPPERONI",
+    "description": "Thin slices of pepperoni sausage.",
+    "price": "£11.95"
+  },
+  {
+    "name": "PIZZA MILANO",
+    "description": "Tomato sauce, mozarella cheese, salami Milano.",
+    "price": "£12.50"
+  },
+  {
+    "name": "FOUR CHEESE PIZZA (V)",
+    "description": "Mozzarella cheese, goats cheese, blue cheese and cheddar cheese.",
+    "price": "£12.50"
+  },
+  {
+    "name": "LA PIAZZA SPECIAL",
+    "description": "Chicken, chopped black olives, red onions, spicy meatballs, wild mushrooms, green jalapenos and sweetcorn.",
+    "price": "£13.50"
+  },
+  {
+    "name": "ROMA",
+    "description": "Chicken and cotto ham.",
+    "price": "£12.50"
+  },
+  {
+    "name": "PACIFIC",
+    "description": "Prawns, tuna flakes, anchovies, mussels, red onions and capers.",
+    "price": "£13.50"
+  },
+  {
+    "name": "HOT AND SPICY",
+    "description": "Pepperoni, bolognese, spicy meat balls, jalapeños and chilli flakes.",
+    "price": "£12.50"
+  },
+  {
+    "name": "VEGETARIANA (V)",
+    "description": "Grilled courgette, aubergine and peppers topped with rocket.",
+    "price": "£11.95"
+  },
+  {
+    "name": "SICILIANA",
+    "description": "Anchovies, oregano and garlic.",
+    "price": "£13.50"
+  },
+  {
+    "name": "BBQ CHICKEN",
+    "description": "BBQ sauce and thin chicken strips.",
+    "price": "£12.50"
+  },
+  {
+    "name": "DIAVOLO",
+    "description": "Hot spicy beef, jalapeño peppers and sliced tomato.",
+    "price": "£12.50"
+  },
+  {
+    "name": "CHICKEN KIEV",
+    "description": "Chicken, mushrooms and garlic.",
+    "price": "£12.50"
+  },
+  {
+    "name": "MEAT FEAST",
+    "description": "Pepperoni, salami, cotto ham, chicken & garlic.",
+    "price": "£12.50"
+  },
+  {
+    "name": "CAPRA (V)",
+    "description": "Goats cheese, sun dried tomatoes, peppers & onion.",
+    "price": "£12.50"
+  },
+  {
+    "name": "GIARDINIERA (V)",
+    "description": "Asparagus, artichoke, mushrooms, peppers, olives and garlic.",
+    "price": "£12.50"
+  },
+  {
+    "name": "PIZZA RUSTICA",
+    "description": "Salami, pepperoni, spicy meatballs, jalapenos, egg, black olives",
+    "price": "£12.50"
+  },
+  {
+    "name": "PARMA HAM",
+    "description": "Parma ham and shaved parmesan.",
+    "price": "£12.50"
+  },
+  {
+    "name": "ZIZA SPECIAL",
+    "description": "Onions, peppers, mushrooms, olives, pepperoni, salami and cotto ham.",
+    "price": "£12.50"
+  },
+  {
+    "name": "GAMBERONI",
+    "description": "Tiger prawns, chicken, peppers, onion and a hint of chilli.",
+    "price": "£13.50"
+  },
+  {
+    "name": "QUATTRO STAGIONI",
+    "description": "Sliced mushrooms, cotto ham, artichoke and black olives divided to represent the four seasons.",
+    "price": "£12.50"
+  },
+  {
+    "name": "SEAFOOD PIZZA",
+    "description": "Baby and tiger prawns, calamari, octopus, mussels and capers.",
+    "price": "£13.50"
+  }
+]

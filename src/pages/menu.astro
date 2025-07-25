@@ -176,77 +176,651 @@ const cold_starters = [
   },
 ];
 
-const mains = [
+const pasta = [
   {
-    name: "Fillet of Beef",
-    description:
-      "8oz 28-day aged fillet, served with triple-cooked chips, roasted tomato and a choice of peppercorn or béarnaise sauce",
-    price: "£32.95",
+    name: "LASAGNA AL FORNO",
+    description: "Homemade beef lasagne and onions.",
+    price: "£11.95",
   },
   {
-    name: "Pan-Roasted Sea Bass",
-    description: "With saffron potatoes, samphire, clams and white wine sauce",
-    price: "£24.50",
+    name: "SPAGHETTI BOLOGNESE",
+    description: "Spaghetti with bolognese sauce and onions.",
+    price: "£10.95",
   },
   {
-    name: "Rack of Lamb",
+    name: "SPAGHETTI CARBONARA",
     description:
-      "With dauphinoise potatoes, seasonal vegetables and rosemary jus",
+      "Spaghetti with pancetta, onions and black pepper in a cream sauce.",
+    price: "£10.95",
+  },
+  {
+    name: "SPAGHETTI & MEATBALLS",
+    description: "Beef meatballs in tomato sauce.",
+    price: "£11.95",
+  },
+  {
+    name: "SPAGHETTI AGLIO OLIO (V)",
+    description:
+      "Garlic, Italian olive oil, fresh spicy mixed peppers and onions",
+    price: "£11.95",
+  },
+  {
+    name: "CANNELLONI DELLO CHEF",
+    description:
+      "Fresh pasta tubes filled with minced beef, spinach and ricotta cheese, baked and topped with bechamel sauce, mozzarella cheese and onions.",
+    price: "£11.95",
+  },
+  {
+    name: "PENNE ARRABIATA (V)",
+    description:
+      "Penne pasta in basil, tomato sauce and a hint of chilli, garlic, onion and cherry tomatoes.",
+    price: "£10.95",
+  },
+  {
+    name: "PENNE BOLOGNESE AL FORNO",
+    description:
+      "Penne pasta with bolognese sauce, mozzarella cheese oven baked and onions.",
+    price: "£11.95",
+  },
+  {
+    name: "PENNE BOSCAIOLA",
+    description:
+      "Chicken strips, wild mushrooms, onions, blue cheese sauce cooked in a creamy garlic sauce.",
+    price: "£11.95",
+  },
+  {
+    name: "TAGLIATELLE SALMONE",
+    description:
+      "Tagliatelle cooked with salmon, tomato, onions in a creamy tomato sauce with cherry tomatoes.",
+    price: "£13.95",
+  },
+  {
+    name: "SPICY BEEF TAGLIATELLE",
+    description:
+      "Thin strips of beef cooked with onions and peppers in a red wine spicy tomato sauce with cherry tomatoes.",
+    price: "£13.95",
+  },
+  {
+    name: "PANCIOTTI",
+    description:
+      "Round pasta parcels filled with scallops, prawns, tiger prawns, baby prawns, onions and a hint of garlic in a creamy sauce.",
+    price: "£13.95",
+  },
+  {
+    name: "SPAGHETTI POLLO E GAMBERI",
+    description:
+      "Diced chicken breast, tiger prawns, baby prawns in a creamy saffron sauce with white wine, garlic, cherry tomatoes, onions and a touch of tomato.",
+    price: "£13.95",
+  },
+  {
+    name: "TAGLIATELLE ZUCCHINI GAMBERI",
+    description:
+      "Tiger prawns and baby prawns with strips of courgettes, onions in a creamy white wine garlic and tomato sauce with cherry tomatoes.",
+    price: "£13.95",
+  },
+  {
+    name: "TAGLIATELLE AL FRUTTI DI MAR",
+    description:
+      "Tagliatelle pasta cooked in a creamy white wine sauce, served with tiger prawns, mussels and mixed seafood, onions with a hint of chilli.",
+    price: "£13.95",
+  },
+  {
+    name: "LINGUINE PICANTE",
+    description:
+      "Spicy Italian sausage with grilled mixed peppers, onions and cherry tomatoes in a rich tomato sauce.",
+    price: "£12.95",
+  },
+  {
+    name: "MELENZANE RIPLENO (V)",
+    description:
+      "Oven baked aubergine topped with tomato, onion and garlic sauce, served with spaghetti napoli.",
+    price: "£12.95",
+  },
+  {
+    name: "CHICKEN AL FORNO",
+    description:
+      "Rigatoni short pasta with chunks of chicken cooked with onions, garlic and a hint of chilli with cherry tomatoes, cream and cheese oven baked).",
+    price: "£12.95",
+  },
+  {
+    name: "LINGUINE AL FRUITTI DI MARE",
+    description:
+      "Linguine cooked with tiger prawns, mussels, mixed seafood, onions in a white wine, garlic, hint of chilli tomato sauce.",
+    price: "£13.95",
+  },
+  {
+    name: "TORTELLINI DI POLLO",
+    description:
+      "Pasta parcels filled with spinach and ricotta cheese with pancetta, fresh chicken, onions and petit pois in a cream sauce.",
+    price: "£12.95",
+  },
+  {
+    name: "LINGUINE BRANZINO",
+    description:
+      "Linguine pasta cooked in a white wine, chilli and tomato sauce with seabass, onions, mixed peppers and cherry tomatoes.",
+    price: "£12.95",
+  },
+  {
+    name: "MEDITERRANEAN SPAGHETTI",
+    description:
+      "Baby prawns & three tigers prawns cooked in a rich creamy sauce, mixed peppers, garlic and onions.",
+    price: "£12.95",
+  },
+  {
+    name: "GAROFALO PASTA",
+    description:
+      "Garofalo pasta served in a lobster sauce, infused with garlic, king prawns and octopus.",
+    price: "£13.95",
+  },
+];
+
+const pizza = [
+  {
+    name: "MARGHERITA (V)",
+    description: "",
+    price: "£11.95",
+  },
+  {
+    name: "PEPPERONI",
+    description: "Thin slices of pepperoni sausage.",
+    price: "£11.95",
+  },
+  {
+    name: "PIZZA MILANO",
+    description: "Tomato sauce, mozarella cheese, salami Milano.",
+    price: "£12.50",
+  },
+  {
+    name: "FOUR CHEESE PIZZA (V)",
+    description:
+      "Mozzarella cheese, goats cheese, blue cheese and cheddar cheese.",
+    price: "£12.50",
+  },
+  {
+    name: "LA PIAZZA SPECIAL",
+    description:
+      "Chicken, chopped black olives, red onions, spicy meatballs, wild mushrooms, green jalapenos and sweetcorn.",
+    price: "£13.50",
+  },
+  {
+    name: "ROMA",
+    description: "Chicken and cotto ham.",
+    price: "£12.50",
+  },
+  {
+    name: "PACIFIC",
+    description:
+      "Prawns, tuna flakes, anchovies, mussels, red onions and capers.",
+    price: "£13.50",
+  },
+  {
+    name: "HOT AND SPICY",
+    description:
+      "Pepperoni, bolognese, spicy meat balls, jalapeños and chilli flakes.",
+    price: "£12.50",
+  },
+  {
+    name: "VEGETARIANA (V)",
+    description: "Grilled courgette, aubergine and peppers topped with rocket.",
+    price: "£11.95",
+  },
+  {
+    name: "SICILIANA",
+    description: "Anchovies, oregano and garlic.",
+    price: "£13.50",
+  },
+  {
+    name: "BBQ CHICKEN",
+    description: "BBQ sauce and thin chicken strips.",
+    price: "£12.50",
+  },
+  {
+    name: "DIAVOLO",
+    description: "Hot spicy beef, jalapeño peppers and sliced tomato.",
+    price: "£12.50",
+  },
+  {
+    name: "CHICKEN KIEV",
+    description: "Chicken, mushrooms and garlic.",
+    price: "£12.50",
+  },
+  {
+    name: "MEAT FEAST",
+    description: "Pepperoni, salami, cotto ham, chicken & garlic.",
+    price: "£12.50",
+  },
+  {
+    name: "CAPRA (V)",
+    description: "Goats cheese, sun dried tomatoes, peppers & onion.",
+    price: "£12.50",
+  },
+  {
+    name: "GIARDINIERA (V)",
+    description: "Asparagus, artichoke, mushrooms, peppers, olives and garlic.",
+    price: "£12.50",
+  },
+  {
+    name: "PIZZA RUSTICA",
+    description:
+      "Salami, pepperoni, spicy meatballs, jalapenos, egg, black olives",
+    price: "£12.50",
+  },
+  {
+    name: "PARMA HAM",
+    description: "Parma ham and shaved parmesan.",
+    price: "£12.50",
+  },
+  {
+    name: "ZIZA SPECIAL",
+    description:
+      "Onions, peppers, mushrooms, olives, pepperoni, salami and cotto ham.",
+    price: "£12.50",
+  },
+  {
+    name: "GAMBERONI",
+    description: "Tiger prawns, chicken, peppers, onion and a hint of chilli.",
+    price: "£13.50",
+  },
+  {
+    name: "QUATTRO STAGIONI",
+    description:
+      "Sliced mushrooms, cotto ham, artichoke and black olives divided to represent the four seasons.",
+    price: "£12.50",
+  },
+  {
+    name: "SEAFOOD PIZZA",
+    description:
+      "Baby and tiger prawns, calamari, octopus, mussels and capers.",
+    price: "£13.50",
+  },
+];
+
+const risotto = [
+  {
+    name: "RISOTTO VERDE",
+    description:
+      "Arborio rice with green beans, peas, green peppers, spinach and courgettes in its own stock with parmesan cheese and a hint of chilli and garlic.",
+    price: "£10.95",
+  },
+  {
+    name: "RISOTTO ALFREDO",
+    description:
+      "Arborio rice with mushrooms and chicken in a light creamy sauce.",
+    price: "£10.95",
+  },
+  {
+    name: "RISOTTO SAFFRON",
+    description:
+      "Arborio rice with garlic, onions, chicken and mixed peppers cooked in a creamy saffron sauce.",
+    price: "£11.95",
+  },
+  {
+    name: "RISOTTO AL SALMON GAMBERI",
+    description:
+      "Arborio rice with fresh salmon, tiger prawns and baby prawns in a white wine, garlic cream sauce with a touch of tomato and cherry tomatoes.",
+    price: "£12.50",
+  },
+  {
+    name: "RISOTTO CALAMARI E GAMBERI",
+    description:
+      "Arborio rice with calamari, tiger prawns and baby prawns in a light tomato, garlic and white wine sauce with cream and a hint of chilli and cherry tomatoes.",
+    price: "£12.95",
+  },
+  {
+    name: "RISOTTO AI FRUTTI DI MARE",
+    description:
+      "Arborio rice with cherry tomatoes tiger prawns, mussels and mixed seafood in a white wine, garlic and a hint of chilli tomato sauce.",
+    price: "£12.95",
+  },
+  {
+    name: "SPICY RISOTTO",
+    description:
+      "Arborio rice with thin strips of beef and chicken cooked with onions, peppers and mushrooms in a red wine spicy tomato sauce and cherry tomatoes.",
+    price: "£12.95",
+  },
+  {
+    name: "WILD MUSHROOM RISOTTO",
+    description:
+      "Arborio rice with wild mushrooms with onions in a creamy garlic sauce.",
+    price: "£11.95",
+  },
+];
+
+const chicken = [
+  {
+    name: "POLLO PICANTE",
+    description:
+      "Grilled chicken breast with parma ham taleggio cheese and spicy sausage in a rich tomato sauce.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO KIEV",
+    description:
+      "Garlic and herbs stuffed chicken in breadcrumbs served with garlic butter.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO PANCETTA**",
+    description:
+      "Breast of chicken cooked in white wine, English mustard, garlic, cream and leek sauce served with mashed potatoes, topped with crispy bacon.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO PARMESAN**",
+    description:
+      "Flattened chicken escalope deep fried in breadcrumbs then topped with bechamel sauce and melted cheddar cheese, served with salad, homemade chips and garlic dip.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO DIANE OR AU POIVRE",
+    description: "Grilled chicken breast served with your choice of sauce.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO CACCIATORE",
+    description:
+      "Chicken breast cooked with peppers, onions, capers and mixed olives in a rich red wine and tomato sauce.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO BOSCAIOLA",
+    description:
+      "Chicken breast cooked with wild mushrooms and blue cheese sauce.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO ASPARAGUS",
+    description:
+      "Breast of chicken stuffed with cheese, asparagus and sun dried tomatoes, wrapped in streaky bacon and served in a cream, white wine and garlic sauce.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO TOSCANO**",
+    description:
+      "Grilled chicken breast with spinach and mozzarella served with white wine and cream garlic sauce on a bed of tagliatelle.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO CARAVAGGIO**",
+    description:
+      "Pan fried breast of chicken with tiger prawns, Norwegian prawns with garlic, tomato and brandy in a lobster sauce served with timbale of rice.",
+    price: "£17.95",
+  },
+  {
+    name: "CHICKEN GRILL",
+    description:
+      "Chicken breast grilled served with vegetables or house fries and a choice of spaciada sauce or blue cheese sauce.",
+    price: "£16.95",
+  },
+  {
+    name: "POLLO PEPERONETA",
+    description:
+      "A breast of chicken cooked in white wine, garlic, mixed peppers, garden peas and leeks. Served in a creamy tomato sauce.",
+    price: "£16.95",
+  },
+  {
+    name: "HOT SHOT PARMESAN**",
+    description:
+      "Flattened chicken escalope, deep fried in crispy breadcrumbs. Topped with a rich béchamel sauce, green jalapeños and spicy pepperoni. Then finished with a layer of melted cheddar cheese. Served with a house salad, chips and garlic dip",
+    price: "£17.50",
+  },
+];
+
+const meat = [
+  {
+    name: "SIRLOIN STEAK",
+    description: "",
+    price: "£27.95",
+  },
+  {
+    name: "T-BONE STEAK",
+    description: "",
     price: "£28.95",
   },
   {
-    name: "Wild Mushroom Risotto",
-    description: "With truffle oil, parmesan and rocket (V)",
-    price: "£19.95",
+    name: "FILLET STEAK",
+    description: "",
+    price: "£27.95",
+  },
+  {
+    name: "RIBEYE A LA PIAZZA",
+    description:
+      "Ribeye steak, king prawns and baby prawns cooked in a homemade lobster sauce.",
+    price: "£25.95",
+  },
+  {
+    name: "SALTIMBOCCA RIBEYE",
+    description:
+      "Ribeye steak served with baby prawns, mixed peppers cooked in a creamy garlic sauce.",
+    price: "£23.95",
+  },
+  {
+    name: "FILLET SURF & TURF",
+    description:
+      "Fillet steak served with king prawns in a white wine and garlic sauce.",
+    price: "£30.95",
+  },
+  {
+    name: "FILLET LA PIAZZA",
+    description:
+      "Medallion fillet tower, goats cheese and black pudding finished with rosemary demi-glaze.",
+    price: "£29.95",
+  },
+  {
+    name: "STEAK SAUCES",
+    description: "Peppercorn, Diane, A la Creme, Demi Glaze",
+    price: "£1.95",
+  },
+  {
+    name: "LAMB SHANK**",
+    description:
+      "Cooked in a juicy demi-glaze with rosemary and served with vegetables and mash.",
+    price: "£20.50",
+  },
+  {
+    name: "LAMB CHOPS**",
+    description:
+      "Grilled lamb chops, served with creamy mashed potatoes and medley of seasonal mixed vegetables. Choose between a refreshing mint sauce or rich gravy.",
+    price: "£20.50",
+  },
+  {
+    name: "MIXED SIZZLER",
+    description:
+      "Stripped beef, chicken, bacon, baby prawns tiger prawns and mixed peppers cooked with a choice of sweet chilli or BBQ sauce.",
+    price: "£26.95",
+  },
+  {
+    name: "STROGANOFF**",
+    description:
+      "Diced lean beef cooked in a demi glaze, onions, mushrooms, cream and mustard sauce, served with timbale of rice",
+    price: "£26.95",
+  },
+];
+
+const fish = [
+  {
+    name: "FILLET OF SEABASS",
+    description:
+      "Pan fried seabass fillets served with king prawns, baby prawns and fresh mussels, all topped with a light white wine, lemon and garlic sauce.",
+    price: "£21.95",
+  },
+  {
+    name: "FILLET OF SALMON",
+    description:
+      "Scottish salmon fillets served with king prawns, baby prawns and fresh mussels cooked with a creamy English mustard sauce.",
+    price: "£21.95",
+  },
+  {
+    name: "SALMON LAKSA CURRY",
+    description:
+      "A Scottish salmon fillet served with baby and king prawns in a rich curry sauce served with mixed vegetables",
+    price: "£21.95",
+  },
+  {
+    name: "MIXED SEAFOOD PLATTER",
+    description:
+      "Fillet of seabass, fillet of salmon, half lobster, king prawns, mussels in white wine and garlic sauce.",
+    price: "£34.95",
+  },
+  {
+    name: "MEDITERRANEAN SEABASS",
+    description:
+      "Seabass fillet, infused with olives, garlic and sweet red onions. Enhanced by sundried tomatoes, aubergine, fresh Thai chilli and cherry tomatoes. This dish is simmered in a Napoli sauce.",
+    price: "£20.50",
+  },
+];
+
+const sides = [
+  {
+    name: "HOUSE FRIES",
+    description: "",
+    price: "£3.50",
+  },
+  {
+    name: "ONION RINGS",
+    description: "",
+    price: "£3.50",
+  },
+  {
+    name: "SEASONAL MIXED SALAD",
+    description: "",
+    price: "£3.50",
+  },
+  {
+    name: "CREAMED SPINACH",
+    description: "",
+    price: "£3.50",
+  },
+  {
+    name: "MIXED VEGETABLES",
+    description: "",
+    price: "£3.50",
+  },
+  {
+    name: "CREAMY MASHED POTATO",
+    description: "",
+    price: "£3.50",
+  },
+  {
+    name: "GARLIC BREAD",
+    description: "",
+    price: "£4.80",
+  },
+  {
+    name: "TOMATO GARLIC BREAD",
+    description: "",
+    price: "£5.00",
+  },
+  {
+    name: "CHEESE GARLIC BREAD",
+    description: "",
+    price: "£5.00",
   },
 ];
 
 const desserts = [
   {
-    name: "Dark Chocolate Fondant",
-    description: "With salted caramel ice cream and honeycomb",
-    price: "£9.95",
+    name: "CHOCOLATE FUDGE BROWNIE",
+    description: "(G, M, E) With chocolate sauce and deluxe ice cream",
+    price: "£5.90",
   },
   {
-    name: "Crème Brûlée",
-    description: "Classic vanilla Crème Brûlée with shortbread",
-    price: "£8.50",
-  },
-  {
-    name: "Sticky Toffee Pudding",
-    description: "With butterscotch sauce and vanilla ice cream",
-    price: "£8.95",
-  },
-  {
-    name: "Cheese Selection",
+    name: "TIRAMISU",
     description:
-      "Selection of British cheeses with grapes, celery, chutney and crackers",
-    price: "£12.95",
+      "(G, M) Finger biscuits soaked in coffee and amaretto liqueur, covered in layers of cream, topped with cocoa powder",
+    price: "£5.90",
+  },
+  {
+    name: "PANNA COTTA",
+    description:
+      "(M) The famous vanila flavoured cooked cream dessert from Piemonte with either amaretto or cassis syrup topping",
+    price: "£5.90",
+  },
+  {
+    name: "BANOFFEE PIE",
+    description:
+      "(G, M) Caramel toffee with fresh banana topped with fresh cream and crumbled Cadbury's flake on a biscuit base",
+    price: "£5.90",
+  },
+  {
+    name: "SEMIFREDDO",
+    description:
+      "(M, E) A zesty lemon and limoncello parfait with citrus and berry sauses",
+    price: "£5.90",
+  },
+  {
+    name: "STICKY TOFFEE PUDDING*",
+    description:
+      "(G, E) With warm caramel sauce topped with deluxe vanilla ice cream",
+    price: "£5.90",
+  },
+  {
+    name: "WHITE CHOCOLATE & BAILEYS CHEESECAKE",
+    description: "(G, M, E) With chocolate sauce and deluxe ice cream",
+    price: "£5.90",
+  },
+  {
+    name: "ICE CREAM",
+    description:
+      "(M, E) Choose from Vanilla with vanilla pod, chocolate or strawberry",
+    price: "£5.90",
   },
 ];
 
 const cocktails = [
   {
-    name: "The La Piazza",
+    name: "Bellini",
+    description: "Prosecco and Archers Peach Schnapps",
+    price: "£8.95",
+  },
+  {
+    name: "Aperol Spritz",
     description:
-      "Our signature cocktail with gin, elderflower, fresh basil, lime and cucumber",
-    price: "£12.50",
+      "Sparkling Prosecco 20cl, Aperol 25ml topped with soda, ice and a slice of orange",
+    price: "£8.95",
   },
   {
-    name: "Smoky Old Fashioned",
+    name: "Cham Cham",
+    description: "Black Raspberry Liqueur topped with Prosecco",
+    price: "£8.95",
+  },
+  {
+    name: "Kir Royale",
+    description: "Blackcurrant Liqueur topped with Prosecco",
+    price: "£8.95",
+  },
+  {
+    name: "Pornstar Martini",
     description:
-      "Woodford Reserve, brown sugar, Angostura bitters and orange peel with a hickory smoke infusion",
-    price: "£14.95",
+      "Vanilla vodka, Passionfruit Liqueur, Passionfruit Puree, Vanilla Syrup, Lime Juice and Pineapple Juice",
+    price: "£8.95",
   },
   {
-    name: "Passion Fruit Martini",
-    description: "Vanilla vodka, passion fruit, lime juice and prosecco",
-    price: "£11.95",
+    name: "Sex on the Beach",
+    description:
+      "Vodka, Peach Schnapps, Peach Puree, Grenadine and Orange Juice",
+    price: "£8.95",
   },
   {
-    name: "Yarm Royale",
-    description: "Chambord, Crème de Mûre, fresh blackberries and champagne",
-    price: "£13.50",
+    name: "Pina Colada",
+    description:
+      "Coconut Rum, Dark Rum, Coconut Milk, Cream and Pineapple Juice",
+    price: "£8.95",
+  },
+  {
+    name: "Mojito (choose from Strawberry or Raspberry)",
+    description: "White Rum, Lime Juice, Gomme Syrup, Mint Leaves and Soda",
+    price: "£8.95",
+  },
+  {
+    name: "Daquiri (choose from Strawberry or Raspberry)",
+    description: "White Rum, Gomme Syrup, Lime Juice",
+    price: "£8.95",
+  },
+  {
+    name: "Espresso Martini",
+    description: "Vanilla Vodka, Coffee Liqueur, Vanilla Syrup and Espresso",
+    price: "£8.95",
   },
 ];
 ---
@@ -317,11 +891,138 @@ const cocktails = [
       <!-- Main Courses Section -->
       <div class="mb-16 animate-slide-up" style="animation-delay: 0.1s;">
         <h2 class="mb-8 font-serif text-3xl text-center text-primary">
-          Main Courses
+          Main Courses - Pasta
         </h2>
+
         <div class="max-w-4xl mx-auto">
           {
-            mains.map((item) => (
+            pasta.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <h3 class="mb-8 font-serif text-3xl text-center text-primary">
+          Main Courses - Pizza
+        </h3>
+        <p class="mb-8 font-serif text-sm text-center text-primary">
+          ALL SERVED WITH 100% MOZZARELLA CHEESE (M) AND A BASE OF HOMEMADE
+          TOMATO SAUCE (Ce) ON A TRADITIONAL THIN BASE (G)
+        </p>
+        <div class="max-w-4xl mx-auto">
+          {
+            pizza.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <!-- Risotto dishes -->
+        <h3 class="mb-8 font-serif text-3xl text-center text-primary">
+          Main Courses - Risotto
+        </h3>
+        <div class="max-w-4xl mx-auto">
+          {
+            risotto.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <!-- Chicken dishes -->
+        <h3 class="mb-8 font-serif text-3xl text-center text-primary">
+          Main Courses - Chicken
+        </h3>
+        <p class="mb-8 font-serif text-sm text-center text-primary">
+          ALL SERVED WITH A CHOICE OF CHIPS OR ROASTED VEGETABLES EXCEPT **
+          DISHES
+        </p>
+        <div class="max-w-4xl mx-auto">
+          {
+            chicken.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <h3 class="mb-8 font-serif text-3xl text-center text-primary">
+          Main Courses - Meat
+        </h3>
+        <p class="mb-8 font-serif text-sm text-center text-primary">
+          ALL SERVED WITH A CHOICE OF CHIPS OR ROASTED VEGETABLES EXCEPT **
+          DISHES<br />
+          ALL STEAKS SERVED WITH AN ONION RING, ROASTED MUSHROOM AND TOMATOES
+        </p>
+        <div class="max-w-4xl mx-auto">
+          {
+            meat.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <h3 class="mb-8 font-serif text-3xl text-center text-primary">
+          Main Courses - Fish
+        </h3>
+        <div class="max-w-4xl mx-auto">
+          {
+            fish.map((item) => (
+              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                  <span class="text-lg font-medium text-secondary">
+                    {item.price}
+                  </span>
+                </div>
+                <p class="text-gray-600">{item.description}</p>
+              </div>
+            ))
+          }
+        </div>
+        <h3 class="mb-8 font-serif text-3xl text-center text-primary">Sides</h3>
+        <div class="max-w-4xl mx-auto">
+          {
+            sides.map((item) => (
               <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
                 <div class="flex items-baseline justify-between mb-2">
                   <h3 class="text-xl font-medium text-primary">{item.name}</h3>
@@ -337,82 +1038,78 @@ const cocktails = [
       </div>
 
       <!-- Desserts Section -->
-      <div class="mb-16 animate-slide-up" style="animation-delay: 0.2s;">
-        <h2 class="mb-8 font-serif text-3xl text-center text-primary">
-          Desserts
-        </h2>
-        <div class="max-w-4xl mx-auto">
-          {
-            desserts.map((item) => (
-              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
-                <div class="flex items-baseline justify-between mb-2">
-                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
-                  <span class="text-lg font-medium text-secondary">
-                    {item.price}
-                  </span>
-                </div>
-                <p class="text-gray-600">{item.description}</p>
+      <h3 class="mb-8 font-serif text-3xl text-center text-primary">
+        Desserts
+      </h3>
+      <div class="max-w-4xl mx-auto">
+        {
+          desserts.map((item) => (
+            <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                <span class="text-lg font-medium text-secondary">
+                  {item.price}
+                </span>
               </div>
-            ))
-          }
-        </div>
+              <p class="text-gray-600">{item.description}</p>
+            </div>
+          ))
+        }
       </div>
 
       <!-- Cocktails Section -->
-      <div class="animate-slide-up" style="animation-delay: 0.3s;">
-        <h2 class="mb-8 font-serif text-3xl text-center text-primary">
-          Signature Cocktails
-        </h2>
-        <div class="max-w-4xl mx-auto">
-          {
-            cocktails.map((item) => (
-              <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
-                <div class="flex items-baseline justify-between mb-2">
-                  <h3 class="text-xl font-medium text-primary">{item.name}</h3>
-                  <span class="text-lg font-medium text-secondary">
-                    {item.price}
-                  </span>
-                </div>
-                <p class="text-gray-600">{item.description}</p>
+      <h3 class="mb-8 font-serif text-3xl text-center text-primary">
+        Cocktails
+      </h3>
+      <div class="max-w-4xl mx-auto">
+        {
+          cocktails.map((item) => (
+            <div class="pb-6 mb-8 border-b border-gray-200 last:border-0">
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="text-xl font-medium text-primary">{item.name}</h3>
+                <span class="text-lg font-medium text-secondary">
+                  {item.price}
+                </span>
               </div>
-            ))
-          }
-        </div>
-      </div>
-
-      <!-- Menu Notes -->
-      <div class="max-w-4xl mx-auto mt-16 text-center">
-        <p class="mb-4 text-gray-600">
-          <span class="font-medium">Please note:</span> Our menu changes seasonally
-          to ensure we use the freshest ingredients.
-        </p>
-        <p class="text-gray-600">
-          (V) - Vegetarian | (VG) - Vegan | (GF) - Gluten Free
-        </p>
-        <p class="mt-4 text-gray-600">
-          If you have any allergies or dietary requirements, please inform your
-          server.
-        </p>
+              <p class="text-gray-600">{item.description}</p>
+            </div>
+          ))
+        }
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="py-16 text-center text-white bg-primary">
-    <div class="container px-4 mx-auto">
-      <h2 class="mb-6 font-serif text-3xl">Ready to experience our cuisine?</h2>
-      <p class="max-w-2xl mx-auto mb-8 text-gray-300">
-        Join us for lunch or dinner and enjoy our carefully crafted menu in
-        elegant surroundings.
-      </p>
-      <a
-        href="/reservations"
-        class="inline-block px-8 py-3 text-white transition-colors rounded-sm bg-secondary hover:bg-secondary-dark"
-      >
-        Book a Table
-      </a>
-    </div>
-  </section>
-
-  <Footer />
+  <!-- Menu Notes -->
+  <div class="max-w-4xl mx-auto mt-16 text-center">
+    <p class="mb-4 text-gray-600">
+      <span class="font-medium">Please note:</span> Our menu changes seasonally to
+      ensure we use the freshest ingredients.
+    </p>
+    <p class="text-gray-600">
+      (V) - Vegetarian | (VG) - Vegan | (GF) - Gluten Free
+    </p>
+    <p class="mt-4 text-gray-600">
+      If you have any allergies or dietary requirements, please inform your
+      server.
+    </p>
+  </div>
 </Layout>
+
+<!-- Call to Action -->
+<section class="py-16 text-center text-white bg-primary">
+  <div class="container px-4 mx-auto">
+    <h2 class="mb-6 font-serif text-3xl">Ready to experience our cuisine?</h2>
+    <p class="max-w-2xl mx-auto mb-8 text-gray-300">
+      Join us for lunch or dinner and enjoy our carefully crafted menu in
+      elegant surroundings.
+    </p>
+    <a
+      href="/reservations"
+      class="inline-block px-8 py-3 text-white transition-colors rounded-sm bg-secondary hover:bg-secondary-dark"
+    >
+      Book a Table
+    </a>
+  </div>
+</section>
+
+<Footer />
