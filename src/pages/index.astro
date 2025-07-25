@@ -1,18 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import About from '../components/About.astro';
-import MenuHighlights from '../components/MenuHighlights.astro';
-import Testimonials from '../components/Testimonials.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="La Piazza, Yarm | Fine Dining & Cocktails in London">
-  <Header />
-  <Hero />
-  <About />
-  <MenuHighlights />
-  <Testimonials />
-  <Footer />
+<Layout
+  title="La Piazza, Yarm | Coming Soon"
+  description="La Piazza, Yarm is preparing something special. Stay tuned for our grand opening of fine dining and cocktails."
+>
+  <script is:inline>
+    // Redirect to coming soon page
+    window.location.href = "/coming-soon";
+  </script>
+
+  <!-- Fallback content in case JavaScript is disabled -->
+  <div class="min-h-screen bg-primary flex items-center justify-center">
+    <div class="text-center text-white px-4">
+      <h1 class="text-4xl font-serif font-bold mb-4">La Piazza, Yarm</h1>
+      <p class="text-xl mb-6">Coming Soon</p>
+      <a
+        href="/coming-soon"
+        class="bg-secondary text-white hover:bg-secondary-dark px-6 py-3 rounded-sm text-lg transition-colors inline-block"
+      >
+        View Details
+      </a>
+    </div>
+  </div>
 </Layout>
